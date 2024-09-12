@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="modal_container">
+        <div class="modal">
+            <input class="modal_input" placeholder="Add Todo ..." autofocus>
+            <div class="modal_btns">
+                <button class="btns modal_btn_add">Add</button>
+                <button class="btns modal_btn_close">×</button>
+            </div>
+        </div>
+    </div>
+    <div class="todo_container">
+        <div class="columns">
+            <div class="column" id="new_todo_place">
+                <h1 class="title">No Status</h1>
+                <button class="btn_todo_add">+ Add Todo</button>
+                <div id="todo_id" class="todo" draggable="true">
+                    Shopping
+                    <span class="todo_close">×</span>
+                </div>
+            </div>
+            <div class="column">
+                <h1 class="title">No Started</h1>
+            </div>
+            <div class="column">
+                <h1 class="title">In Progress</h1>  
+            </div>
+            <div class="column">
+                <h1 class="title">Completed</h1>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
